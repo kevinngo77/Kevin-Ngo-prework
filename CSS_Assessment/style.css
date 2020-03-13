@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+}
+#nav {
+  background-color: #818081;
+  width: 100%;
+  margin: -8px -10px 30px;
+  padding-right: 20px;
+}
+
+#left {
+  width: 50%;
+  background-color: #0300fd;
+  float: left;
+  margin: 0px -10px 175px;
+  padding-top: 187.5px;
+  height: 375px;
+  box-sizing: border-box;
+}
+
+#right {
+  width: 25%;
+  background-color: #fe0001;
+  float: right;
+  margin-right: -10px;
+  padding-top: 187.5px;
+  height: 375px;
+  box-sizing: border-box;
+}
+
+#footer {
+  overflow: auto;
+  clear: both;
+  background-color: #028002;
+}

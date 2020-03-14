@@ -1,20 +1,21 @@
 body {
   text-align: center;
+  font-size: 130%;
+  margin: 0 0 0 0;
 }
 #nav {
   background-color: #818081;
   width: 100%;
-  margin: -8px -10px 30px;
-  padding-right: 20px;
+  margin-bottom: 50px;
 }
 
 #left {
   width: 50%;
   background-color: #0300fd;
   float: left;
-  margin: 0px -10px 175px;
-  padding-top: 187.5px;
-  height: 375px;
+  margin-bottom: 239px;
+  padding-top: 300px;
+  height: 600px;
   box-sizing: border-box;
 }
 
@@ -22,14 +23,13 @@ body {
   width: 25%;
   background-color: #fe0001;
   float: right;
-  margin-right: -10px;
-  padding-top: 187.5px;
-  height: 375px;
+  padding-top: 300px;
+  height: 600px;
   box-sizing: border-box;
 }
 
 #footer {
   overflow: auto;
-  clear: both;
   background-color: #028002;
+  width: 100%;
 }

@@ -66,6 +66,7 @@ header {
 .background {
   background-image: url("assets/images/webb.png");
   padding-bottom: 119px;
+  background-position: center;
 }
 
 #para1,

@@ -7,8 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -29,43 +27,46 @@
       class="background2"
     >
     <nav class="navbar navbar-expand-lg navbar-light bg-faded">
-        <div class="d-flex flex-grow-1">
-          
-          <a class="navbar-brand" href="index.html">
-            Kevin Ngo
-          </a>
-          <div class="w-100 text-right">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#myNavbar7"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
+      <div class="d-flex flex-grow-1">
+        <a class="navbar-brand" href="index.html">
+          Kevin Ngo
+        </a>
+        <div class="w-100 text-right hide-desktop">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-target="#myNavbar7"
+            id="menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-        <div
-          class="collapse navbar-collapse flex-grow-1 text-right"
-          id="myNavbar"
+      </div>
+
+      <div class=" flex-grow-1 text-right" id="myNavbar">
+        <ul
+          class="navbar-nav ml-auto flex-nowrap show-desktop hide-mobile"
+          id="nav"
         >
-          <ul class="navbar-nav ml-auto flex-nowrap" id="nav-links">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link" id="aboutlink">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="portfolio.html" class="nav-link" id="portfoliolink"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link" id="contactlink"
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <li id="exit" class="exit-btn hide-desktop" id="nav">
+            <img src="assets/images/exit.svg" alt="exit menu" />
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" id="aboutlink">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link" id="portfoliolink"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" id="contactlink"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
       <div id="container2">
         <header>Portfolio</header>
@@ -119,9 +120,6 @@
           <small>Copyright &copy;</small>
         </div>
       </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -137,5 +135,20 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var menu = document.getElementById("menu");
+      var nav = document.getElementById("nav");
+      var exit = document.getElementById("exit");
+
+      menu.addEventListener("click", function(e) {
+        nav.classList.toggle("hide-mobile");
+        e.preventDefault();
+      });
+
+      exit.addEventListener("click", function(e) {
+        nav.classList.add("hide-mobile");
+        e.preventDefault();
+      });
+    </script>
   </body>
 </html>

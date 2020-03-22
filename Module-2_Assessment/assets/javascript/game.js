@@ -90,7 +90,6 @@ document.addEventListener("keyup", function(event) {
 const showHint = function() {
   for (let i = 0; i < randomWord.length; i++) {
     blanks.push("_");
-    console.log(randomWord);
   }
   questword.innerText = blanks;
   questword.innerText = blanks.join("  ");
@@ -112,7 +111,6 @@ const checkGuess = function(event, callback) {
       for (let i = 0; i < wordSplit.length; i++) {
         if (event.key.toLowerCase() === wordSplit[i]) {
           blanks[i] = event.key.toLowerCase();
-          console.log(event.key.toLowerCase());
           questword.innerText = blanks;
           questword.innerText = blanks.join("  ");
           winGame();
@@ -139,7 +137,6 @@ const loseGame = function() {
   }
 };
 
-//Restart game
 const resetScreen = function() {
   blanks = [];
   lettersGuessed = [];

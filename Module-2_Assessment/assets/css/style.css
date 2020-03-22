@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 body {
   margin: 0;
   height: 100%;
@@ -5,7 +8,9 @@ body {
   font-family: "Mukta", sans-serif;
 }
 .background {
-  height: 1080px;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
 }
 h1 {
   color: white;
@@ -16,7 +21,7 @@ h1 {
 }
 footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   text-align: center;
   width: 100%;
 }
